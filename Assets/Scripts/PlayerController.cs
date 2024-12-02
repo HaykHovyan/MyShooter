@@ -81,7 +81,7 @@ public class PlayerController : MonoBehaviour
             bullet1 = Instantiate(bullet, shootingPoint.position, gunPivot.rotation);
         }
         bullet1.GetComponent<Bullet>().damage = damage;
-
+        FindObjectOfType<AudioManager>().OnShoot();
         yield return new WaitForSeconds(1 / attackSpeed);
         canShoot = true;
     }
@@ -118,14 +118,19 @@ public class PlayerController : MonoBehaviour
             doubleShot = true;
             Destroy(other.gameObject);
         }
-        else if (other.gameObject.tag == "AttackSpeedPU")
+        if (other.gameObject.tag == "AttackSpeedPU")
         {
             attackSpeed *= 2;
             Destroy(other.gameObject);
         }
-        else if (other.gameObject.tag == "DamagePU")
+        if (other.gameObject.tag == "DamagePU")
         {
             damage *= 2;
+            Destroy(other.gameObject);
+        }
+        if (other.gameObject.tag == "Coin")
+        {
+            gameController.IncreaseScore(10, other.transform.position);
             Destroy(other.gameObject);
         }
     }
