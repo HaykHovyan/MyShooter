@@ -177,12 +177,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b99b2e54c16a9a4ea9fda6e7f8d8a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathEffect: {fileID: 4593184484909914552, guid: 2e1e9506f5904a64b81744324fb7cd50, type: 3}
   bounty: 20
+  maxHealth: 100
+  healthBar: {fileID: 8252582778671669020}
+  deathEffect: {fileID: 4593184484909914552, guid: 45b9432453b0ec1448df8ac33008fd41, type: 3}
   minDistanceFromPlayer: 15
   maxDistanceFromPlayer: 35
-  healthBar: {fileID: 8252582778671669020}
-  maxHealth: 100
 --- !u!1 &4518113461806301775
 GameObject:
   m_ObjectHideFlags: 0

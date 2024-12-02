@@ -148,5 +148,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lifeTime: 3
   speed: 10
-  impactEffect: {fileID: 4021103657954561961, guid: 5c755f9bc5253ea418e919994537dcc7, type: 3}
+  impactEffect: {fileID: 5880797563127281583, guid: 961916905ecdd7c409719584f164ee6e, type: 3}
   damage: 0
