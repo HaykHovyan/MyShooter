@@ -29,7 +29,7 @@ public class Bullet : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy")
         {
-            collision.gameObject.GetComponent<Enemy>().health -= damage;
+            collision.gameObject.GetComponent<Enemy>().TakeDamage(damage);
         }
         Instantiate(impactEffect, transform.position, new Quaternion());
         Destroy(gameObject);
