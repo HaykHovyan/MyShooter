@@ -104,7 +104,7 @@ Transform:
   m_GameObject: {fileID: 4389179695564728297}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -0.07}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -180,6 +180,7 @@ MonoBehaviour:
   bounty: 20
   maxHealth: 100
   healthBar: {fileID: 8252582778671669020}
+  healthBarCanvas: {fileID: 9119260564827808165}
   deathEffect: {fileID: 4593184484909914552, guid: 45b9432453b0ec1448df8ac33008fd41, type: 3}
   minDistanceFromPlayer: 15
   maxDistanceFromPlayer: 35
@@ -284,7 +285,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6226861039237457713}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -292,7 +293,7 @@ RectTransform:
   - {fileID: 895325576724937223}
   - {fileID: 2670075047897148921}
   m_Father: {fileID: 653982705395511801}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 1}

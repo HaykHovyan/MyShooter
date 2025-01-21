@@ -20,11 +20,11 @@ public class GameController : MonoBehaviour
     [SerializeField]
     GameObject player;
     [SerializeField]
+    int enemyCount;
+    [SerializeField]
     GameObject enemy;
     [SerializeField]
     List<Transform> enemyPositions;
-    [SerializeField]
-    int enemyCount;
     [SerializeField]
     Transform enemySpawnPositionMin;
     [SerializeField]

@@ -13,6 +13,8 @@ public class Enemy : MonoBehaviour
     [SerializeField]
     Image healthBar;
     [SerializeField]
+    Canvas healthBarCanvas;
+    [SerializeField]
     GameObject deathEffect;
     [SerializeField]
     float minDistanceFromPlayer;
@@ -31,7 +33,6 @@ public class Enemy : MonoBehaviour
     }
     void Update()
     {
-        healthBar.fillAmount = health / maxHealth;
         if (health <= 0)
         {
             GameController controller = FindObjectOfType<GameController>();
@@ -48,10 +49,12 @@ public class Enemy : MonoBehaviour
             if (distanceFromPlayer >= maxDistanceFromPlayer)
                 transform.position += (player.position - transform.position).normalized * (distanceFromPlayer - minDistanceFromPlayer);
         }
+        healthBarCanvas.transform.LookAt(Camera.main.transform);
     }
 
     public void TakeDamage(int damage)
     {
         health -= damage;
+        healthBar.fillAmount = health / maxHealth;
     }
 }
